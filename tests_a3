@@ -1,0 +1,53 @@
+#!=/bin/bash
+
+# negative test cases
+abc
+adsasdadsa
+command -1 -2 -3 -4 -5
+ls -l -a -h | grep .c | wc -w -l -t -s -q | wc -w | wc
+ls -l -a -h | grep .c | wc -w -l | wc -w | wc
+echo this wont run|| because there are more than 4 args and 3 conditionals || date || pwd || ls 
+ls && date && pwd && time && prc24s
+file3.txt ~ file2.txt
+grep .txt < file1.txt 
+mkdir -p tests testing1 testing2
+;;;
+&& || &&
+|| | || || 
+
+# Kill/Add terminals
+# dter
+# addmb
+# dtex
+
+# positive test cases
+mkdir -p tests/testing1/testing2
+cd tests/testing1/testing2
+
+ls > file1.txt
+ls -a >> file1.txt
+grep .txt < file1.txt
+
+echo Nightwing > file2.txt
+echo - Dick Grayson > file3.txt
+
+file3.txt ~ file2.txt
+
+echo  Do; echo you; echo Believe; echo in magic?
+echo Because; echo you are the; echo chosen one
+echo you are a; echo wizard harry
+
+mkdir testing ; rmdir testing; pwd; echo "hello"
+
+ps -u | grep minibash
+ls | grep .c 
+ls | grep .c | wc 
+ls | grep .c | wc | wc -w
+
+ls && date && pwd || date
+
+echo hello && date && pwd && ls 
+
+echo the crisis && echo is imminent && echo no matter what && echo you do
+
+echo it wont matter || date || pwd || ls 

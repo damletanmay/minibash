@@ -1,0 +1,66 @@
+MINIBASH(1)                                             Minibash                                                 MINIBASH(1)
+
+NAME
+       minibash- Minibash for linux to run programs
+
+SYNOPSIS
+       minibash --help # show manual page
+       minibash <bash_script> # to run multiple commands one after the another
+       minibash # to enter into minibash
+
+DESCRIPTION
+
+       minibash is a linux bash program written in c by Tanmay Damle. 
+       It can run any executables in it provided they give appropriate amount of arguments and special character rules
+       mentioned below in special characters. It implements the usage of system calls to achieve all the functions.
+       It uses fork(), exec(), dup(), dup2(), pipe() and signal() system calls to do various tasks. It mimics the 
+       behaviour of Bourne-Again SHell terminal.
+
+   Custom Commands
+
+       cd     To change directory
+       
+       clear  To clear stdout screen
+
+       exit   To exit minibash terminal
+
+       fore   To bring a process into foreground
+
+       addmb  To add a new instance of minibash
+
+       dter   To kill current minibash terminal
+
+       dtex   To kill all minibash terminals within a user login
+
+   Special Characters
+     
+       #      Print the number of words in a specific file
+
+       ~      Concatenate two files
+
+       +      Run a process in background
+
+       |      Pipe upto 4 Commands
+
+       >      Redirect output to a file
+
+       >>     Append output to a file
+
+       <      Take input from file into Commands
+
+       ;      Run commands sequentially
+
+       &&     Conditional and, run next command sequentially only if previous command was successfull
+
+       ||     Conditional or, run next command sequentially only if previous command was failed
+
+
+LIMITATIONS
+
+       Only 1 Special Character is allowed in one input, && and || can overlap
+       Only 4 arguments in any given command regardless the use of special characters or not
+
+
+BUGS
+       No known bugs, but there always are bugs, please contact me if you find any
+                                                        2024 June 19                                             MINIBASH(1)
