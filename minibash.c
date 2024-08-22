@@ -11,9 +11,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
-// this code can be found in /home/damlet/Desktop/asp_assignment/assignment_3/minibash_tanmay_damle_110134656.c
-// there's a compile script written use bash compile_a3 and bash tests_a3 to compile and test the program
-// path for executable minibash is already put, so that it can be executed from anywhere
+// path executable minibash in $PATH, so that it can be executed from anywhere
 
 #define MIN_ARGS 2
 #define MAX_ARGS 16
@@ -1679,7 +1677,7 @@ void show_docs()
 {
     char *buffer = malloc(sizeof(char) * 2500);
 
-    int man_fd = open("/home/damlet/Desktop/asp_assignment/assignment_3/minibash_man_page.txt", O_RDONLY);
+    int man_fd = open("minibash_man_page.txt", O_RDONLY);
 
     if (man_fd == -1)
         exit(-1);
