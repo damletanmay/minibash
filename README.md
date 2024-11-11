@@ -14,4 +14,4 @@ It can run any executables in it provided they give appropriate amount of argume
 
 Take a look at the official manual page for [Minibash](https://github.com/damletanmay/minibash/blob/main/minibash_man_page.txt)
 
-Also Take a look at [test_cases] to see usage (https://github.com/damletanmay/minibash/blob/main/test_cases)
+Also Take a look at [test_cases](https://github.com/damletanmay/minibash/blob/main/test_cases) to see usage 
